@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    font: 15px/1.5;
+    font-family: 'Lexend Deca', sans-serif;
+    background: hsl(0, 0%, 95%);
+}
+
+#wrapper{
+    /* width: 1440px;  */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+#cars{
+    display: flex;
+    width: 60%;
+    border-radius: 20px;
+    min-height: 500px;
+}
+
+.container{
+    padding: 50px 50px;
+    align-items: flex-start;
+}
+
+header, header img, header .heading{
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+
+/* SEDANS */
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px ;
+}
+
+.sedans .btn1{
+    color: hsl(31, 77%, 52%);
+}
+
+
+/* SUVS */
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs .btn1{
+    color: hsl(184, 100%, 22%);;
+}
+
+/* LUXURY */
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px ;
+}
+
+.luxury .btn1{
+    color: hsl(179, 100%, 13%);;
+}
+
+/* BUTTON */
+
+.btn1{
+   height: 40px;
+   width: 60%;
+   background-color: hsl(0, 0%, 95%);
+   border:1px solid hsl(0, 0%, 95%);
+   border-radius: 20px;
+}
+
+.btn1:hover{
+    background-color:transparent;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+
+@media(max-width:768px){
+    body{
+        overflow: hidden;
+        height: 100vh;
+    }
+    
+    #wrapper{
+        max-width: ;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 20px auto 20px auto;
+        padding: 20px;
+        overflow: scroll;
+}
+
+#cars{
+    width: 60%;
+    height: 50%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: none;
+}
+
+
+.sedans{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0%;
+}
+
+.luxury{
+    border-radius: 0%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+}
