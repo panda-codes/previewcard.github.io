@@ -35,11 +35,12 @@
 ### Built with
 - HTML5
 - CSS-flexbox
+- CSS-grid
 
 ### What I learned
 
 ### Continued development
-- still need to work on the media query resposivess
+
 ### Useful resources
 
 ## Author
